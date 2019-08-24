@@ -5,7 +5,7 @@ cap = cv2.VideoCapture(0)
 face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_alt.xml")
 skip = 0
 face_data = []
-data_path = "../../sampling/face_data/" 
+data_path = "../../sampling/face_data/" #give the address to store your face data as npy file
 person_name = input("enter your name: ")
 while True:
     ret,frame =cap.read()

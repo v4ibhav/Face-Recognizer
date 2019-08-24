@@ -1,3 +1,4 @@
+#### KNN #####
 def distance(p1,p2):
     return np.sum((p2 - p1)**2)**.5
 
@@ -23,15 +24,13 @@ import os
 import cv2
 
 
-###### KNN #######
-
 label = []
 class_id = 0
 names = {}
 face_data = []
 
 #load data 
-data_path = "../../sampling/face_data/"
+data_path = "../../sampling/face_data/"#data path where face data is stored
 for fx in os.listdir(data_path):
     if fx.endswith('.npy'):
         names[class_id] = fx[:-4]
